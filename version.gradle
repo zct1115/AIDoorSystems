@@ -1,0 +1,74 @@
+ext{
+    versions=[
+            compileSdk      : 27,
+            buildTools      : "26.0.2",
+            minSdk          : 19,
+            targetSdk       : 27,
+            gradleBuildTool : "3.0.0",
+            kotlin          : "1.2.20",
+            supportLibrary  : "27.0.2",
+            retrofit        : "2.3.0",
+            glide           : "3.7.0",
+            okhttp          : "3.4.1",
+            anko            : "0.10.4"
+    ]
+
+    depends = [
+            kotlin                 : [
+                    stdlib: "org.jetbrains.kotlin:kotlin-stdlib-jre7:$versions.kotlin",
+            ],
+
+            //==================== Support Library ====================
+            support                : [
+                    v4        : "com.android.support:support-v4:$versions.supportLibrary",
+                    appcompat : "com.android.support:appcompat-v7:$versions.supportLibrary",
+                    design    : "com.android.support:design:$versions.supportLibrary",
+                    cardview  : "com.android.support:cardview-v7:$versions.supportLibrary",
+                    customtabs: "com.android.support:customtabs:$versions.supportLibrary",
+                    constraint: "com.android.support.constraint:constraint-layout:1.1.0-beta4",
+                    multidex  : "com.android.support:multidex:1.0.2",
+            ],
+
+            //==================== Network ====================
+            okhttp3                : [
+                    loggingIntercepter: "com.squareup.okhttp3:logging-interceptor:3.9.1",
+                    okhttp: "com.squareup.okhttp3:okhttp: $versions.okhttp"
+            ],
+            retrofit               : [
+                    core          : "com.squareup.retrofit2:retrofit:$versions.retrofit",
+                    converterMoshi: "com.squareup.retrofit2:converter-moshi:$versions.retrofit",
+                    adapterRxJava2: "com.squareup.retrofit2:adapter-rxjava2:$versions.retrofit",
+                    gson          : "com.squareup.retrofit2:converter-gson:$versions.retrofit"
+            ],
+            anko                   :[
+                    commons       : "org.jetbrains.anko:anko-commons:$versions.anko",
+                    v4commons     : "org.jetbrains.anko:anko-support-v4-commons:$versions.anko"
+            ],
+            //==================== Structure ====================
+            rxjava2                : [
+                    core   : "io.reactivex.rxjava2:rxjava:2.1.8",
+                    android: "io.reactivex.rxjava2:rxandroid:2.0.1",
+                    kotlin : "io.reactivex.rxjava2:rxkotlin:2.2.0",
+            ],
+            binding                : [
+                    compiler: "com.android.databinding:compiler:3.0.1",
+            ],
+            //==================== UI ====================
+            glide                  : [
+                    core    : "com.github.bumptech.glide:glide:$versions.glide"
+            ],
+
+            //==================== Test ====================
+            junit                  : "junit:junit:4.12",
+            mockitoKotlin          : "com.nhaarman:mockito-kotlin:1.5.0",
+            robolectric            : [
+                    core: "org.robolectric:robolectric:3.5.1",
+            ],
+            assertk                : "com.willowtreeapps.assertk:assertk:0.9",
+            threetenbp             : "org.threeten:threetenbp:1.3.3",
+            supporttest            : [
+                    runner  : "com.android.support.test:runner:1.0.1",
+                    espresso: "com.android.support.test.espresso:espresso-core:3.0.1"
+            ],
+    ]
+}

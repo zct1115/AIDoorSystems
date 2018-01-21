@@ -1,0 +1,21 @@
+<resources>
+
+    <!-- 主题样式 -->
+    <style name="AppTheme" parent="@style/Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:textSize">@dimen/text_middle_size</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorPrimary">@color/common_black</item>
+        <item name="colorPrimaryDark">@color/common_black</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <!-- Window黑色背景主题 -->
+    <style name="AppTheme.Black" parent="@style/AppTheme">
+        <item name="android:windowBackground">@color/common_black</item>
+    </style>
+
+
+
+
+</resources>

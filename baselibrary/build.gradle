@@ -1,0 +1,70 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+
+android {
+    compileSdkVersion versions.compileSdk
+
+    defaultConfig {
+        minSdkVersion versions.minSdk
+        targetSdkVersion versions.targetSdk
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    // Kotlin
+    implementation depends.kotlin.stdlib
+
+    //==================== Support Library ====================
+    implementation depends.support.v4
+    implementation depends.support.appcompat
+    implementation depends.support.design
+    implementation depends.support.cardview
+    implementation depends.support.customtabs
+    implementation depends.support.constraint
+    implementation depends.support.multidex
+
+    //==================== Network ====================
+    implementation depends.okhttp3.loggingIntercepter
+    implementation depends.okhttp3.okhttp
+
+    implementation depends.retrofit.core
+    implementation depends.retrofit.converterMoshi
+    implementation depends.retrofit.adapterRxJava2
+    implementation depends.retrofit.gson
+
+
+    //==================== Structure ====================
+    implementation depends.rxjava2.core
+    implementation depends.rxjava2.android
+    implementation depends.rxjava2.kotlin
+
+    kapt depends.binding.compiler
+
+    //==================== UI ====================
+    implementation depends.glide.core
+
+    implementation depends.anko.commons
+    implementation depends.anko.v4commons
+
+
+
+}
+repositories {
+    mavenCentral()
+}
