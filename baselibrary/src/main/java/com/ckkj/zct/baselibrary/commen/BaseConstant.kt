@@ -8,7 +8,7 @@ package com.ckkj.zct.baselibrary.commen
 class BaseConstant{
     companion object {
         //本地服务器地址
-        const val SERVER_ADDRESS = ""
+        const val SERVER_ADDRESS = "http://120.79.59.193:8080/Kotlin_Server/"
         //SP表名
         const val TABLE_PREFS = "AI_Door"
         //Token Key

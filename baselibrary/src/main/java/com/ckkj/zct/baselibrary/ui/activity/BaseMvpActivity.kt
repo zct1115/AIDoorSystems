@@ -19,7 +19,6 @@ abstract class BaseMvpActivity<T :BasePresenter<*>>:BaseAcitivity(),BaseView{
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
         mLoading= ProgressLoading.create(this)
     }
     override fun showLoading() {

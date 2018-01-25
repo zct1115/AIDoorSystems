@@ -9,11 +9,9 @@ import com.ckkj.zct.baselibrary.utils.NetWorkUtils
  * Created by zct11 on 2018/1/18.
  * MVP中P层 基类
  */
-open class BasePresenter<T :BaseView>{
+open class BasePresenter<T :BaseView>(){
     lateinit var mView: T
-
-    lateinit var context:Context
-
+    lateinit var context: Context
     /*
         检查网络是否可用
      */

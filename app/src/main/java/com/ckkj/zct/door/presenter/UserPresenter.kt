@@ -1,5 +1,7 @@
 package com.ckkj.zct.door.presenter
 
+import android.content.Context
+import com.ckkj.zct.baselibrary.commen.BaseApplication.Companion.context
 import com.ckkj.zct.baselibrary.ext.excute
 import com.ckkj.zct.baselibrary.presenter.BasePresenter
 import com.ckkj.zct.baselibrary.rx.BaseSubscriber

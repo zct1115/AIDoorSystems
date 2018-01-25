@@ -1,10 +1,12 @@
 package com.ckkj.zct.baselibrary.widget
 
+import android.app.Activity
 import android.content.Context
 import android.util.AttributeSet
 import android.view.View
 import android.widget.FrameLayout
 import com.ckkj.zct.baselibrary.R
+import com.ckkj.zct.baselibrary.ext.onClick
 
 import kotlinx.android.synthetic.main.layout_header_bar.view.*
 
@@ -45,7 +47,19 @@ class HeaderBar @JvmOverloads constructor(
         }
         rightText?.let {
             mRightTv.text=it
+            mRightTv.visibility= View.VISIBLE
         }
 
+
+        mLeftIv.onClick {
+            if(context is Activity){
+                (context as Activity).finish()
+            }
+        }
+
+    }
+
+    fun getRightView():View{
+        return mRightTv
     }
 }

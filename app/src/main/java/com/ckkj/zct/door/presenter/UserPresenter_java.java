@@ -1,11 +1,14 @@
 package com.ckkj.zct.door.presenter;
 
+import android.content.Context;
+
 import com.ckkj.zct.baselibrary.presenter.BasePresenter;
 import com.ckkj.zct.baselibrary.presenter.view.BaseView;
 import com.ckkj.zct.door.data.respository.UserRepository_java;
 import com.ckkj.zct.door.presenter.view.UserView_java;
 import com.ckkj.zct.door.service.impl.UserServiceImpl_java;
 
+import org.jetbrains.annotations.NotNull;
 import org.reactivestreams.Subscriber;
 import org.reactivestreams.Subscription;
 
@@ -20,6 +23,7 @@ import io.reactivex.schedulers.Schedulers;
 public class UserPresenter_java extends BasePresenter<UserView_java> {
 
     private UserServiceImpl_java userServiceImpl_java=new UserServiceImpl_java();
+
 
     public void register(String username,String password,String verityCode){
           /*业务逻辑*/

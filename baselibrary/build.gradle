@@ -58,6 +58,11 @@ dependencies {
 
     //==================== UI ====================
     implementation depends.glide.core
+    annotationProcessor depends.glide.compiler
+    
+
+    implementation depends.bottom_navigation.bar
+    implementation depends.banner.core
 
     implementation depends.anko.commons
     implementation depends.anko.v4commons

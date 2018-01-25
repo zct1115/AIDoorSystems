@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">BaseLibrary</string>
     <string name="coming_soon_tip">敬请期待~~~</string>
+
+    <string name="nar_home">首页</string>
+    <string name="nar_circle">动态</string>
+    <string name="nar_message">消息</string>
+    <string name="nar_me">我的</string>
 </resources>

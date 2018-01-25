@@ -11,5 +11,6 @@ class Application :BaseApplication(){
 
     override fun onCreate() {
         super.onCreate()
+        context=this
     }
 }
