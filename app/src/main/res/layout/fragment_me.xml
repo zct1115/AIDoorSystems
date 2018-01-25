@@ -6,4 +6,32 @@
         app:isShowBack="false"
         app:titleText="我的专题"
         style="@style/MatchWrap"/>
+    <LinearLayout
+        android:id="@+id/bg_me"
+        android:background="@mipmap/bg_home"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="horizontal">
+        <com.ckkj.zct.baselibrary.widget.CircleImageView
+            android:id="@+id/mCircleImageView"
+            android:layout_marginLeft="@dimen/common_margin"
+            android:layout_gravity="center"
+            android:background="@mipmap/icon_default_user"
+            android:layout_width="@dimen/common_icon_width"
+            android:layout_height="@dimen/common_icon_height" />
+        <TextView
+            style="@style/WrapWrap"
+            android:layout_gravity="center"
+            android:textSize="@dimen/text_big_size"
+            android:layout_marginLeft="@dimen/common_margin"
+            android:textColor="@color/common_white"
+            android:text="@string/login_register"/>
+    </LinearLayout>
+
+   <android.support.v7.widget.RecyclerView
+       android:layout_marginTop="@dimen/common_margin"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/mRecycleView"/>
+
 </LinearLayout>

@@ -6,4 +6,6 @@
     <string name="nar_circle">动态</string>
     <string name="nar_message">消息</string>
     <string name="nar_me">我的</string>
+    
+    <string name="login_register">登录/注册</string>
 </resources>
